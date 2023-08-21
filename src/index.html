@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <title>Badge Generator</title>
+</head>
+<body>
+    <div class="menu">
+        <a id="title">Badge Generator</a>
+    </div>
+    <div class="view" id="input-block">
+        <div class="item-view" id="content">
+            <div class="label-view">Badge Content</div>
+            <input class="input-view" id="content-input" placeholder="Contents of the right part of the badge"></input>
+            <div class="label-view">Content Color</div>
+            <input class="input-view" id="content-input" placeholder="Color of the right part of the badge"></input>
+        </div>
+        <div class="item-view" id="style">
+            <div class="label-view">Style</div>
+            <div class="choose-view">
+                <div class="choose-item">
+                    <input type="radio" name="style" id="flat" class="choose-button" value="flat" checked>
+                    <label for="flat"></label>
+                    <img for="flat" alt="Static Badge" src="https://img.shields.io/badge/flat-green?logo=GitHub&label=style">
+                </div>
+                <div class="choose-item">
+                    <input type="radio" name="style" id="plastic" class="choose-button" value="plastic">
+                    <label for="plastic"></label>
+                    <img alt="Static Badge" src="https://img.shields.io/badge/plastic-green?style=plastic&logo=GitHub&label=style">
+                </div>
+                <div class="choose-item">
+                    <input type="radio" name="style" id="flat-square" class="choose-button" value="flat-square">
+                    <label for="flat-square"></label>
+                    <img alt="Static Badge" src="https://img.shields.io/badge/flat--square-green?style=flat-square&logo=GitHub&label=style">
+                </div>            
+                <div class="choose-item">
+                    <input type="radio" name="style" id="for-the-badge" class="choose-button" value="for-the-badge">
+                    <label for="for-the-badge"></label>
+                    <img alt="Static Badge" src="https://img.shields.io/badge/for--the--badge-green?style=for-the-badge&logo=GitHub&label=style">
+                </div>
+                <div class="choose-item">
+                    <input type="radio" name="style" id="social" class="choose-button" value="social">
+                    <label for="social"></label>
+                    <img alt="Static Badge" src="https://img.shields.io/badge/social-green?style=social&logo=GitHub&label=style">
+                </div>
+            </div>
+        </div>
+        <div class="item-view" id="label">
+            <div class="label-view">Label</div>
+            <input class="input-view" id="label-input" placeholder="Contents of the left part of the badge"></input>
+            <div class="label-view">Label Color</div>
+            <input class="input-view" id="label-input" placeholder="Color of the left part of the badge"></input>
+        </div>
+        <div class="item-view" id="logo">
+            <div class="label-view">Logo</div>
+            <input class="input-view" id="logo-input" placeholder="Name of logo"></input>
+            <div class="label-view">Logo Color</div>
+            <input class="input-view" id="logo-input" placeholder="Color of logo"></input>
+        </div>
+        <div class="item-view" id="link">
+            <div class="label-view">Link</div>
+            <input class="input-view" id="link-input" placeholder="Link of the badge"></input>
+        </div>
+    </div>
+    <div class="view" id="output-block">
+        <div class="item-view" id="badge-show">
+            <div class="label-view">Url</div>
+            <code class="out-code" id="out-url">https://img.shields.io/badge/content-yellow?style=flat-square&logo=bilibili&logoColor=green&label=label&labelColor=blue
+            </code>
+            <div class="copy-block">
+                <button class="button-copy" id="copy-md"></button>
+                <button class="button-copy" id="copy-html"></button>
+            </div>
+        </div>
+    </div>
+        <div class="item-view" id="code-show"></div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
