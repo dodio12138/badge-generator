@@ -119,7 +119,8 @@ input[type="radio"]:checked + label::before {
     padding: 15px;
     background-color: rgb(37, 37, 37);
     white-space: pre-line; 
-    width: 100%;
+    text-align-last: justify;
+    border-radius: 3px;
 }
 
 .copy-block{
@@ -128,6 +129,7 @@ input[type="radio"]:checked + label::before {
 }
 
 .button-copy{
+    width: 100px;
     color: #FAFAFA;
     padding: 10px 20px;
     border-radius: 4px;
@@ -158,5 +160,25 @@ input[type="radio"]:checked + label::before {
 .button-copy:active{
     box-shadow: none;
     transform: translate(0px, 3px);
+    transition-duration: .1s;
+}
+
+#generate{
+    align-items:center;
+}
+
+#button-generate{
+    background-color: #0098d4;
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    transition-duration: .1s;
+    border-radius: 2px;
+    width: 100%;
+}
+
+#button-generate:hover{
+    background-color: #0383b5;
     transition-duration: .1s;
 }
