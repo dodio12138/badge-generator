@@ -18,7 +18,7 @@
             <div class="label-view">Badge Content</div>
             <input class="input-view" id="content-input" placeholder="Contents of the right part of the badge"></input>
             <div class="label-view">Content Color</div>
-            <input class="input-view" id="content-input" placeholder="Color of the right part of the badge"></input>
+            <input class="input-view" id="content-color-input" placeholder="Color of the right part of the badge"></input>
         </div>
         <div class="item-view" id="style">
             <div class="label-view">Style</div>
@@ -54,13 +54,17 @@
             <div class="label-view">Label</div>
             <input class="input-view" id="label-input" placeholder="Contents of the left part of the badge"></input>
             <div class="label-view">Label Color</div>
-            <input class="input-view" id="label-input" placeholder="Color of the left part of the badge"></input>
+            <input class="input-view" id="label-color-input" placeholder="Color of the left part of the badge"></input>
         </div>
         <div class="item-view" id="logo">
             <div class="label-view">Logo</div>
+            <button class="button-copy" id="logo-upload-button">ByFile</button>
             <input class="input-view" id="logo-input" placeholder="Name of logo"></input>
+            <div id="file">
+                <input type="file" class="input-view" id="fileInput" style="display: none;" accept=".svg" />
+            </div>
             <div class="label-view">Logo Color</div>
-            <input class="input-view" id="logo-input" placeholder="Color of logo"></input>
+            <input class="input-view" id="logo-color-input" placeholder="Color of logo"></input>
         </div>
         <div class="item-view" id="link">
             <div class="label-view">Link</div>
@@ -82,8 +86,8 @@
         </div>
         <div class="item-view" id="badge-show">
             <div class="label-view">Badge</div>
-            <a href="https://github.com/Dodio12138/badge-generator" title="Go to GitHub repo">
-                <img src="https://img.shields.io/static/v1?label=Dodio&message=badge-generator&color=blue&logo=github" alt="Dodio12138">
+            <a href="https://github.com/Dodio12138/badge-generator" title="Go to GitHub repo" id="badge-show-link">
+                <img id="badge-show-img" src="https://img.shields.io/static/v1?label=Dodio&message=badge-generator&color=blue&logo=github" alt="Dodio12138">
             </a>
         </div>
     </div>     

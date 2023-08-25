@@ -81,6 +81,16 @@ body{
     padding: 0;
 }
 
+#logo-upload-button{
+    margin: 0;
+    width: auto;
+    padding: 4px 8px;
+}
+
+#fileInput{
+
+}
+
 /* 隐藏原始单选框 */
 input[type="radio"] {
     display: none;
@@ -182,3 +192,4 @@ input[type="radio"]:checked + label::before {
     background-color: #0383b5;
     transition-duration: .1s;
 }
+
