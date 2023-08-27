@@ -42,9 +42,9 @@ async function generateBadge() {
             style =  styleChoose.id;
         }
     });
-    const logoColor = document.getElementById('logo-color-input').value || 'red';
-    const label = document.getElementById('label-input').value || 'label';
-    const labelColor = document.getElementById('label-color-input').value || 'yellow';
+    const logoColor = document.getElementById('logo-color-input').value || '';
+    const label = document.getElementById('label-input').value || '';
+    const labelColor = document.getElementById('label-color-input').value || '';
     const link = document.getElementById('link-input').value || '';
     let logo = '';
     let badgeURL = '';
@@ -68,7 +68,11 @@ async function generateBadge() {
     const badgeShowImg = document.getElementById('badge-show-img');
 
     // 更新 <a> 元素的 href 属性和 title 属性
-    badgeShowLink.href = link;
+    if(link==''){
+        badgeShowLink.href = badgeURL;
+    }else{
+        badgeShowLink.href = link;
+    }
     badgeShowLink.title = 'staticBadge';
 
     // 更新 <img> 元素的 src 属性和 alt 属性
