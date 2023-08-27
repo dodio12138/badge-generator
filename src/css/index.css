@@ -1,5 +1,5 @@
 html{
-    margin: 5% 10% 5% 10%;
+    margin: 0% 10% 0% 10%;
     font-size: larger;
     background-color: rgb(37, 37, 37);
     color: rgb(255, 255, 255);
@@ -14,6 +14,11 @@ body{
     grid-row-gap: 2px;
     justify-content: start; 
     align-content: center; 
+}
+
+img{
+    max-width: 100%; /* 图片的最大宽度为其容器的宽度 */
+    height: auto; /* 高度自适应，以保持原始比例 */
 }
 
 .menu{
@@ -73,6 +78,7 @@ body{
 .choose-item{
     display: flex;
     padding: 2px;
+    align-items: center;
 }
 
 .choose-button{
