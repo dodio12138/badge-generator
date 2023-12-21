@@ -1,3 +1,4 @@
+//TODO: 优化markdown下的直接链接点击 使用原生markdown
 // 获取按钮元素
 const generateButton = document.getElementById('button-generate');
 
